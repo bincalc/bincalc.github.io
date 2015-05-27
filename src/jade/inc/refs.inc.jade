@@ -1,0 +1,6 @@
+if refs.styles
+	each style in refs.styles
+		link(rel="stylesheet", href="#{style.src}")&attributes(style.attrs||{})
+if refs.scripts
+	each script in refs.scripts
+		script(src="#{script.src}")&attributes(script.attrs||{})

@@ -1,0 +1,23 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Node files #
+##############
+/node_modules
+
+# Release files #
+#################
+/css
+/js
+/index.html
+/index.src.html
+/404.html
+/404.src.html

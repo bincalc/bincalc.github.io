@@ -1,0 +1,41 @@
+doctype html
+html.no-js(lang="en", data-ng-app="bincalc")
+	head
+		meta(charset="UTF-8")
+		title #{domain} | #{pkg.description}
+		meta(name="description", content="#{pkg.description}")
+		meta(name="viewport", content="width=device-width,minimum-scale=1,maximum-scale=1")
+		script.
+			!function(e,c){e[c]=e[c].replace('no-js','js')}(document.documentElement,'className')
+		if refs = header
+			include ../inc/refs.inc.jade
+	
+	body(class="tpl-#{template.nameSlug} tplp-#{template.pathSlug}")
+		
+		block header
+			header.header
+				block header-inner
+					section.content
+						h1.site-title #{domain}
+						h2.site-description #{pkg.description}
+					div.loading-main
+						- var n = 0
+						while n++ < 8
+							s
+		
+		block main
+			main.main
+				block main-inner
+					section.content
+						p main
+		
+		block footer
+			footer.footer
+				block footer-inner
+					section.content
+						p
+							small
+								a(href="#{copyright.link}") #{copyright.text}
+		
+		if refs = footer
+			include ../inc/refs.inc.jade

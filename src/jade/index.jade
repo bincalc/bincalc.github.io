@@ -1,0 +1,39 @@
+extends ./tpl/main.tpl.jade
+
+block main
+	main.main(data-ng-controller="calculator")
+		block main-inner
+			section.content.calculator-fields
+				label.calculator-field(
+					data-ng-repeat="field in fields.list",
+					data-data-type="{{field.id}}",
+					title="{{field.title}}"
+				)
+					span.label {{field.label}}
+					input.field(
+						type="text",
+						data-ng-model="field.value",
+						data-bincalc-field="field",
+						data-ng-change="update(field)",
+						data-ng-trim="false"
+					)
+			section.content.calculator-settings
+				div.calculator-setting(
+					data-ng-repeat="setting in settings.list",
+					data-ng-switch="setting.type",
+					data-data-type="{{setting.type}}"
+				)
+					label(
+						data-ng-switch-when="boolean",
+						title="{{setting.title}}"
+					)
+						input(
+							type="checkbox",
+							data-ng-model="setting.value",
+							data-ng-change="update()"
+						)
+						span.input
+						span.label {{setting.label}}
+			section.message.message-js
+				h3
+					a(href="http://enable-javascript.com/") Enable JavaScript to use.

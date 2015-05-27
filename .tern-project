@@ -1,0 +1,17 @@
+{
+	"libs": [
+		"browser",
+		"ecma5"
+	],
+	"loadEagerly": [
+	],
+	"dontLoad": [
+	],
+	"plugins": {
+		"node": {},
+		"complete_strings": {},
+		"doc_comment": {
+			"fullDocs": true
+		}
+	}
+}

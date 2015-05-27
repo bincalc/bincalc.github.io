@@ -1,0 +1,36 @@
+{
+  "name": "bincalc",
+  "version": "1.0.0",
+  "description": "Instant binary converter",
+  "homepage": "http://bincalc.me",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander O'Mara",
+  "copyright": "Copyright (c) 2015 Alexander O'Mara",
+  "license": "All rights reserved",
+  "private": true,
+  "devDependencies": {
+    "angular": "^1.4.0",
+    "autoprefixer-core": "^5.1.11",
+    "bignumber.js": "^2.0.7",
+    "clean-css": "^3.2.10",
+    "del": "^1.2.0",
+    "globby": "^2.0.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-data": "^1.2.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-jshint": "^1.11.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "alexanderomara/gulp-sourcemaps#4a8bedac21feee7439c25a61ba8d652a7315744e",
+    "gulp-util": "^3.0.4",
+    "gulp-wrapper": "^1.0.0",
+    "jade": "^1.10.0",
+    "less": "^2.5.1",
+    "normalize.css": "^3.0.3",
+    "webpack": "^1.9.10"
+  }
+}
