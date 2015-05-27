@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="bincalc" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<title>bincalc.me | Instant binary converter</title>
+		<meta name="description" content="Instant binary converter">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+		<script>!function(e,c){e[c]=e[c].replace('no-js','js')}(document.documentElement,'className')</script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich|Lato:400,700,300,300italic,400italic,700italic|Ubuntu+Mono">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/main.js" async data-webpack-dir="js/"></script>
+	</head>
+	<body class="tpl-index tplp-index">
+		<header class="header">
+			<section class="content">
+				<h1 class="site-title">bincalc.me</h1>
+				<h2 class="site-description">Instant binary converter</h2>
+			</section>
+			<div class="loading-main">
+				<s></s>
+				<s></s>
+				<s></s>
+				<s></s>
+				<s></s>
+				<s></s>
+				<s></s>
+				<s></s>
+			</div>
+		</header>
+		<main data-ng-controller="calculator" class="main">
+			<section class="content calculator-fields">
+				<label data-ng-repeat="field in fields.list" data-data-type="{{field.id}}" title="{{field.title}}" class="calculator-field"><span class="label">{{field.label}}</span>
+					<input type="text" data-ng-model="field.value" data-bincalc-field="field" data-ng-change="update(field)" data-ng-trim="false" class="field">
+				</label>
+			</section>
+			<section class="content calculator-settings">
+				<div data-ng-repeat="setting in settings.list" data-ng-switch="setting.type" data-data-type="{{setting.type}}" class="calculator-setting">
+					<label data-ng-switch-when="boolean" title="{{setting.title}}">
+						<input type="checkbox" data-ng-model="setting.value" data-ng-change="update()"><span class="input"></span><span class="label">{{setting.label}}</span>
+					</label>
+				</div>
+			</section>
+			<section class="message message-js">
+				<h3><a href="http://enable-javascript.com/">Enable JavaScript to use.</a></h3>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="content">
+				<p><small><a href="http://alexomara.com/">Copyright © 2015 Alexander O'Mara. All rights reserved.</a></small></p>
+			</section>
+		</footer>
+	</body>
+</html>
