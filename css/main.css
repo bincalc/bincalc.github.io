@@ -1,6 +1,6 @@
 /*!
  * bincalc
- * @version 1.0.0
+ * @version 1.0.1
  * @author Alexander O'Mara
  * @copyright Copyright (c) 2015 Alexander O'Mara
  * @license All rights reserved
@@ -450,11 +450,11 @@ ng\:form {
 }
 
 ::-moz-selection {
-  background: #bcbcbc;
+  background: #BCBCBC;
 }
 
 ::selection {
-  background: #bcbcbc;
+  background: #BCBCBC;
 }
 :focus {
   outline: 1px dotted;
@@ -467,7 +467,7 @@ body {
   height: 100%;
 }
 body {
-  background: #e0e0e0;
+  background: #E0E0E0;
   color: #484848;
   font-family: Lato, san-serif;
   display: -webkit-box;
@@ -519,7 +519,7 @@ a:active {
   text-decoration: none;
 }
 .site-title {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0.25em 0 0;
 }
 .site-description {
@@ -621,7 +621,7 @@ html.js .main > .message-404 {
 .calculator-field {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 1.5em;
-  background: #ededed;
+  background: #EDEDED;
   position: relative;
   display: block;
   width: -webkit-calc(50% - 10px);
@@ -663,9 +663,9 @@ html.js .main > .message-404 {
 }
 .calculator-field > .field:focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 5px 0 #bcbcbc inset;
-     -moz-box-shadow: 0 0 5px 0 #bcbcbc inset;
-          box-shadow: 0 0 5px 0 #bcbcbc inset;
+  -webkit-box-shadow: 0 0 5px 0 #BCBCBC inset;
+     -moz-box-shadow: 0 0 5px 0 #BCBCBC inset;
+          box-shadow: 0 0 5px 0 #BCBCBC inset;
 }
 .calculator-field > .field::-ms-clear {
   display: none;
@@ -731,7 +731,7 @@ html.js .main > .message-404 {
   width: 1em;
   height: 1em;
   margin-right: 0.25em;
-  background: #ededed;
+  background: #EDEDED;
   border: 2px solid #808080;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -745,9 +745,9 @@ html.js .main > .message-404 {
   visibility: hidden;
 }
 .calculator-setting input[type="checkbox"]:focus + .input {
-  -webkit-box-shadow: 0 0 5px 2px #bcbcbc inset;
-     -moz-box-shadow: 0 0 5px 2px #bcbcbc inset;
-          box-shadow: 0 0 5px 2px #bcbcbc inset;
+  -webkit-box-shadow: 0 0 5px 2px #BCBCBC inset;
+     -moz-box-shadow: 0 0 5px 2px #BCBCBC inset;
+          box-shadow: 0 0 5px 2px #BCBCBC inset;
 }
 .calculator-setting input[type="checkbox"]:checked + .input:before {
   visibility: visible;
