@@ -1,8 +1,8 @@
 {
   "name": "bincalc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Instant binary converter",
-  "homepage": "http://bincalc.me",
+  "homepage": "http://bincalc.github.io",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
